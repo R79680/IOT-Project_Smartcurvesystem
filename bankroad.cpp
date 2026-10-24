@@ -1,6 +1,7 @@
 
 #include<iostream>
 #include<math.h>
+
 enum declare{
 Low,
 High,};
@@ -19,10 +20,10 @@ int Evelocity=0;//Expected velocity on that turn of mountains;
 void setup(){
 Serial.begin(9600);
 //Setup pins for ardino
-pinMode(Green_led,Output);
-pinMode(Yellow_led,Output);
-pinMode(Red_led,Output);
-pinMode(Buzzer,Output);
+pinMode(Green_led,OUTPUT);
+pinMode(Yellow_led,OUTPUT);
+pinMode(Red_led,OUTPUT);
+pinMode(Buzzer,OUTPUT);
 
 
 }
