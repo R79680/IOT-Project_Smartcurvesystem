@@ -1,5 +1,5 @@
 
-#include<iostream>
+
 #include<math.h>
 
 enum declare{
@@ -42,17 +42,22 @@ execute=true;	}
 	if(velocity<Evelocity){
 		digitalWrite(Green_led,High);
 		delay(1000);
+		digitalWrite(Green_led,Low);
 	}
 	if(velocity==Evelocity){
 	digitalWrite(Yellow_led,High);
 	delay(1000);
+	digitalWrite(Yellow_led,Low);
+
 
 
 	}
 	if(velocity>Evelocity){
 	digitalWrite(Red_led,High);
-	delay(1000);
 	digitalWrite(Buzzer,High);
+	delay(1000);
+	digitalWrite(Red_led,Low);
+	digitalWrite(Buzzer,Low);
 	delay(1000);
 
 
