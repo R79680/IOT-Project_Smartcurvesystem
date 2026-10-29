@@ -36,9 +36,8 @@ Serial.println("For this road safe speed is:  ");
 Serial.println(Evelocity);
 execute=true;	}
 	Serial.println("Please enter Speed of your Car : ");
-	while(Serial.available() == 0){
-	}
-	velocity= Serial.parseInt();
+	
+	velocity= random(0,100);
 	if(velocity<Evelocity){
 		digitalWrite(Green_led,High);
 		delay(1000);
